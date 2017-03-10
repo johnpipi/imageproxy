@@ -29,7 +29,7 @@ import (
 	"github.com/peterbourgon/diskv"
 	"sourcegraph.com/sourcegraph/s3cache"
 	//"willnorris.com/go/imageproxy"
-	"github.com/johnpipi/imageproxy"
+	"../../../imageproxy"
 )
 
 // goxc values

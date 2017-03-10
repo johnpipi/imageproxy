@@ -278,7 +278,7 @@ type TransformingTransport struct {
 // RoundTrip implements the http.RoundTripper interface.
 func (t *TransformingTransport) RoundTrip(req *http.Request) (*http.Response, error) {
 	userAgent := os.Getenv("IMAGEPROXY_USER_AGENT")
-	if len(userAgent) == 0 {
+	if userAgent != "" {
 		req.Header.Set("User-Agent", userAgent)
 	}
 
