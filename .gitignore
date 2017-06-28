@@ -2,3 +2,4 @@ build
 .goxc.local.json
 *.test
 cmd/imageproxy/main
+docker-compose.yml
