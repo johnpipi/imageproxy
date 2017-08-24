@@ -60,7 +60,7 @@ ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 WORKDIR $GOPATH
 
-RUN go get -u gopkg.in/h2non/bimg.v1
+#RUN go get -u gopkg.in/h2non/bimg.v1
 RUN go get github.com/daddye/vips
 ADD . /go/src/willnorris.com/go/imageproxy
 RUN go get willnorris.com/go/imageproxy/cmd/imageproxy
